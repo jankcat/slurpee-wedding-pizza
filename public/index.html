@@ -58,65 +58,136 @@
         }
         .bg-blue {
           background-image: url('/img/bg.png');
-          color: red;
         }
     </style>
   </head>
   <body>
+  
+	<!-- Top Audio Placeholder -->
     <div class="middle" id="top">
         <audio id="music" controls loop autoplay>
             <source src="/aud/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
+	
+	<!-- JS Enabled Warning/Fallback -->
     <noscript>
         <strong>We're sorry but slurpee-wedding-pizza doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <noscript><a href="https://www.eventbrite.ca/e/et-wedding-tickets-86465200743" rel="noopener noreferrer" target="_blank"></noscript>
     <noscript></a>RSVP Online!</noscript>
-    <div id="main">
-      STUFF HERE
-      <button id="eventbrite-widget-modal-trigger-86465200743" type="button">RSVP Online!</button>
-      <div id="eventbrite-widget-container-86465200743"></div>
+	
+	<!-- Title -->
+    <div class="middle">
+      TODO Title
     </div>
-    <script src="/js/trail.js"></script>
-    <script src="/js/snowflakes.light.min-4.0.0-active.js"></script>
+	
+	<!-- RSVP Big -->
+	<hr>
+    <div class="middle">
+	  TODO Change this button to be cool
+      <button id="eventbrite-widget-modal-trigger-86465200743" type="button">RSVP Online!</button>
+    </div>
+	
+	<!-- Info -->
+	<hr>
+    <div class="bg-blue">
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+      <p>WEDDING INFO WILL GO HERE</p>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+	
+	<!-- RSVP Form -->
+	<hr>
+	<div class="middle">
+		<img src="/img/rsvp-title.png" alt="RSVP below">
+		<div id="eventbrite-widget-container-86465200743"></div>
+	</div>
+	
+	<!-- Construction Nonsense -->
+	<hr>
+	<div class="bg">
+		<h3>
+			<img alt="under construction" src="/img/construction2.gif">
+			ThiS PagE Is UndeR CoNsTrUcTiOn
+			<img alt="under construction" src="/img/construction.gif">
+		</h3>
+	</div>
+	
+	<!-- Counter and Spinning Nonsense -->
+	<hr>
+	<div class="bg">
+		<img alt="canada" src="/img/netscape.gif" class="img-small">&nbsp;
+		<img alt="canada" src="/img/canada.gif" class="img-small">&nbsp;
+		<img alt="counter" src="/img/counter.png" class="img-small">&nbsp;
+		<img alt="counter" src="/img/trophy.gif" class="img-small">&nbsp;
+		<img alt="counter" src="/img/frontpage.jpg" class="img-small">
+	</div>
+	
+	<!-- Bottom Audio Placeholder -->
+	<hr>
     <div class="middle" id="bottom"></div>
+	<!-- Mawwage Click Audio -->
     <div>
         <audio id="mawwage">
             <source src="/aud/mawwage.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <script>
-            document.addEventListener("scroll", function() {
-              var music = document.getElementById('music');
-              music.play();
-            });
-            document.addEventListener('click', function() {
-              var audio = document.getElementById('mawwage');
-              audio.play();
-              var music = document.getElementById('music');
-              music.play();
-            }, true);
-			document.getElementById('music').addEventListener("pause", function(){
-              var music = document.getElementById('music');
-              music.play();
-			});
-            document.getElementById('music').addEventListener("mouseover", function(){
-              var music = document.getElementById('music');
-			  if (music.paused) return;
-              var fragment = document.createDocumentFragment();
-              if (music.parentElement.id === 'top') {
-                fragment.appendChild(music);
-                document.getElementById('bottom').appendChild(fragment);
-              } else {
-                fragment.appendChild(music);
-                document.getElementById('top').appendChild(fragment);
-              }
-              music.play();
-            });
-        </script>
     </div>
+	
+	<!-- Silly Scripts -->
+	<script src="/js/trail.js"></script>
+    <script src="/js/snowflakes.light.min-4.0.0-active.js"></script>
+	
+	<!-- Audio Fuckery -->
+	<script>
+		document.addEventListener("scroll", function() {
+		  var music = document.getElementById('music');
+		  music.play();
+		});
+		document.addEventListener('click', function() {
+		  var audio = document.getElementById('mawwage');
+		  audio.play();
+		  var music = document.getElementById('music');
+		  music.play();
+		}, true);
+		document.getElementById('music').addEventListener("pause", function(){
+		  var music = document.getElementById('music');
+		  music.play();
+		});
+		document.getElementById('music').addEventListener("mouseover", function(){
+		  var music = document.getElementById('music');
+		  if (music.paused) return;
+		  var fragment = document.createDocumentFragment();
+		  if (music.parentElement.id === 'top') {
+			fragment.appendChild(music);
+			document.getElementById('bottom').appendChild(fragment);
+		  } else {
+			fragment.appendChild(music);
+			document.getElementById('top').appendChild(fragment);
+		  }
+		  music.play();
+		});
+	</script>
+		
+	<!-- Eventbrite Scripts -->
     <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
     <script type="text/javascript">
         var exampleCallback = function() {
