@@ -17,6 +17,7 @@
 
 
 RSVP Code:
+```
 <!-- Noscript content for added SEO -->
 <noscript><a href="https://www.eventbrite.ca/e/et-wedding-tickets-86465200743" rel="noopener noreferrer" target="_blank"></noscript>
 <button id="eventbrite-widget-modal-trigger-86465200743" type="button">RSVP Online!</button>
@@ -48,3 +49,4 @@ RSVP Code:
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
 </script>
+```
