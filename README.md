@@ -7,6 +7,7 @@
 - [x] BG MIDI song
 - [x] snowing image
 - [ ] titles
+- [ ] favicon.ico
 - [x] title tag - get hitched, yo
 - [ ] memes
 - [ ] actual info
