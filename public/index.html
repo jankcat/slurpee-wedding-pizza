@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>get hitched, fool</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #ffffff;
+            background-image: url("asyouwish.gif");
+            text-align: center;
+        }
+        hr {
+            border-width: 2px;
+        }
+        .snowflake__inner:before {
+            background-image: url('beau.png');
+            border-radius: 100%;
+        }
+        .middle {
+            text-align: center;
+        }
+        img {
+          max-width: 90%;
+        }
+        #logo {
+          max-width: 90%;
+          max-height: 250px;
+        }
+        .head-three {
+          font-size: 3em;
+        }
+        .head-two {
+          font-size: 2em;
+        }
+        .left {
+          text-align: left;
+        }
+        .img-small {
+          max-height: 72px;
+        }
+        .img-pak {
+          border-width: 8px;
+          border-style: outset;
+          border-color: hotpink;
+        }
+        .bg {
+          background-image: url("./assets/bg.jpg");
+        }
+        .bg-green {
+          background-image: url("./assets/greenbg.jpg");
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="middle" id="top">
+        <audio id="music" controls loop autoplay>
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <noscript>
+        <strong>We're sorry but slurpee-wedding-pizza doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <noscript><a href="https://www.eventbrite.ca/e/et-wedding-tickets-86465200743" rel="noopener noreferrer" target="_blank"></noscript>
+    <noscript></a>RSVP Online!</noscript>
+    <div id="main">
+      STUFF HERE
+      <button id="eventbrite-widget-modal-trigger-86465200743" type="button">RSVP Online!</button>
+      <div id="eventbrite-widget-container-86465200743"></div>
+    </div>
+    <script src="trail.js"></script>
+    <script src="snowflakes.light.min-4.0.0-active.js"></script>
+    <div class="middle" id="bottom"></div>
+    <div>
+        <audio id="mawwage">
+            <source src="mawwage.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            document.addEventListener("scroll", function() {
+              var music = document.getElementById('music');
+              music.play();
+            });
+            document.addEventListener('click', function() {
+              var audio = document.getElementById('mawwage');
+              audio.play();
+              var music = document.getElementById('music');
+              music.play();
+            }, true);
+			document.getElementById('music').addEventListener("pause", function(){
+              var music = document.getElementById('music');
+              music.play();
+			});
+            document.getElementById('music').addEventListener("mouseover", function(){
+              var music = document.getElementById('music');
+			  if (music.paused) return;
+              var fragment = document.createDocumentFragment();
+              if (music.parentElement.id === 'top') {
+                fragment.appendChild(music);
+                document.getElementById('bottom').appendChild(fragment);
+              } else {
+                fragment.appendChild(music);
+                document.getElementById('top').appendChild(fragment);
+              }
+              music.play();
+            });
+        </script>
+    </div>
+    <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '86465200743',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-86465200743',
+            onOrderComplete: exampleCallback
+        });
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '86465200743',
+            iframeContainerId: 'eventbrite-widget-container-86465200743',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
+  </body>
+</html>
