@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
     <title>get hitched, fool</title>
     <style>
         body {
@@ -12,14 +12,14 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             color: #ffffff;
-            background-image: url("asyouwish.gif");
+            background-image: url("/img/asyouwish.gif");
             text-align: center;
         }
         hr {
             border-width: 2px;
         }
         .snowflake__inner:before {
-            background-image: url('beau.png');
+            background-image: url('/img/beau.png');
             border-radius: 100%;
         }
         .middle {
@@ -50,10 +50,14 @@
           border-color: hotpink;
         }
         .bg {
-          background-image: url("./assets/bg.jpg");
+          background-image: url('/img/bg.jpg");
         }
         .bg-green {
-          background-image: url("./assets/greenbg.jpg");
+          background-image: url('/img/greenbg.jpg');
+          color: red;
+        }
+        .bg-blue {
+          background-image: url('/img/bg.png');
           color: red;
         }
     </style>
@@ -61,7 +65,7 @@
   <body>
     <div class="middle" id="top">
         <audio id="music" controls loop autoplay>
-            <source src="music.mp3" type="audio/mpeg">
+            <source src="/aud/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -75,12 +79,12 @@
       <button id="eventbrite-widget-modal-trigger-86465200743" type="button">RSVP Online!</button>
       <div id="eventbrite-widget-container-86465200743"></div>
     </div>
-    <script src="trail.js"></script>
-    <script src="snowflakes.light.min-4.0.0-active.js"></script>
+    <script src="/js/trail.js"></script>
+    <script src="/js/snowflakes.light.min-4.0.0-active.js"></script>
     <div class="middle" id="bottom"></div>
     <div>
         <audio id="mawwage">
-            <source src="mawwage.mp3" type="audio/mpeg">
+            <source src="/aud/mawwage.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <script>
