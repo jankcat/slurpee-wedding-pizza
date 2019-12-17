@@ -5,9 +5,9 @@
 - [x] background GIF
 - [x] click MP3
 - [x] BG MIDI song
-- [ ] snowing image
+- [x] snowing image
 - [ ] titles
-- [ ] title tag
+- [x] title tag - get hitched, yo
 - [ ] memes
 - [ ] actual info
 - [ ] embed eventbrite page
