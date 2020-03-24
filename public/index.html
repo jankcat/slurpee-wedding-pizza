@@ -48,6 +48,9 @@
         .img-small {
           max-height: 72px;
         }
+        .img-med {
+          max-height: 100px;
+        }
         .img-pak {
           border-width: 8px;
           border-style: outset;
@@ -93,6 +96,17 @@
 		<img src="/img/logo.gif" alt="E&T Wedding">
     </div>
 	
+	<!-- Confidential -->
+	<hr>
+    <div class="bg">
+		<img src="/img/strip.gif" alt="Warning"><br>
+		DO NOT SHARE THIS WEBPAGE!<br>
+		The Bride & Groom will share this webpage with anyone invited DIRECTLY.<br>
+		<img src="/img/strip.gif" alt="Warning"><br>
+		<img src="/img/gun.gif" class="img-med" alt="Warning" >
+		<img src="/img/fire2.gif" class="img-med" alt="Warning"><br>
+    </div>
+	
 	<!-- RSVP Big -->
 	<hr>
     <div class="middle">
@@ -118,7 +132,7 @@
       <p>
 		<img src="/img/general.png" alt="General Info"><br>
 		<span style="font-weight:700;">Gifts:</span><br>
-		We are adults with most of what we need already. Do not feel obligated to get us anything. If you feel like getting us a gift, here are a few ideas:<br>
+		We are adults with most of what we need already, but if you feel like getting us a gift, here are a few ideas:<br>
 		<ul>
 			<li>We are going on a honey-moon, so any contribution towards that is amazing!</li>
 			<li>We are renovating, so Home Depot or Costco gift cards are super appreciated.</li>
@@ -190,7 +204,7 @@
 	
 	<!-- Silly Scripts -->
 	<script src="/js/trail.js"></script>
-    <script src="/js/snowflakes.light.min-4.0.0-active.js"></script>
+    <script src="/js/snowflakes.light.min-4.0.1.js"></script>
 	
 	<!-- Audio Fuckery -->
 	<script>
@@ -220,6 +234,13 @@
 			document.getElementById('top').appendChild(fragment);
 		  }
 		  music.play();
+		});
+		
+		Snowflakes({
+		  minSize: 50,
+		  maxSize: 100,
+		  count: 5,
+		  rotation: false,
 		});
 	</script>
 		
